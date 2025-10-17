@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Showcase</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .section-title {
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        #showcase-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #fff;
+        }
+        #data-preview pre {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        #file-info dl {
+            background-color: #f1f3f5;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 0;
+        }
+        #file-info dt {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #495057;
+        }
+        #file-info dd {
+            margin-left: 0;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            border-left: 3px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4 section-title">Multimedia Showcase Page</h1>
+
+        <!-- Logo Image Showcase -->
+        <div class="mb-5">
+            <h2 class="section-title">Logo Image</h2>
+            <img id="showcase-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="logo.png">
+            <p class="text-center text-muted">A placeholder for logo.png (the provided data URI represents a 1x1 transparent pixel).</p>
+        </div>
+
+        <!-- Data Preview -->
+        <div class="mb-5">
+            <h2 class="section-title">Data Preview (data.csv)</h2>
+            <div id="data-preview">
+                <pre>name,age,city,salary
+John Doe,28,New York,75000
+Jane Smith,34,Los Angeles,82000</pre>
+            </div>
+        </div>
+
+        <!-- File Information -->
+        <div class="mb-5">
+            <h2 class="section-title">Attached File Information</h2>
+            <div id="file-info">
+                <dl>
+                    <dt>logo.png</dt>
+                    <dd>Type: image</dd>
+                    <dd>MIME: image/png</dd>
+                    <dd>Size: ~0.1 KB</dd>
+                    <dd>Data URI: YES</dd>
+
+                    <dt>data.csv</dt>
+                    <dd>Type: csv</dd>
+                    <dd>Total rows: 3 (plus header)</dd>
+                    <dd>Characters: 79</dd>
+
+                    <dt>readme.txt</dt>
+                    <dd>Type: text</dd>
+                    <dd>Lines: 3</dd>
+                    <dd>Characters: 70</dd>
+                    <dd>Size: 70 bytes</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
