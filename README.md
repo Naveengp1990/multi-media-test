@@ -1,3 +1,2 @@
-# multi-media-test
-
-Generated application for multi-media-test
+bash
+    git clone https://github.com/Naveengp1990/multi-media-test.git
